@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1c9ef4ed65785a4183bca1c044a9841, type: 3}
+  m_Name: GameRules
+  m_EditorClassIdentifier: 
+  <Fruits>k__BackingField:
+  - {fileID: 11400000, guid: 7f5442e845814cf41b640997a64584d6, type: 2}
+  - {fileID: 11400000, guid: 011e8fc0c5a0b6345b816fa935334a97, type: 2}
+  - {fileID: 11400000, guid: 5b1698a04ee9cf74aa399d82c234a642, type: 2}
+  - {fileID: 11400000, guid: a0379faa719fed64fa0c5892e58cf1e0, type: 2}
+  - {fileID: 11400000, guid: 1394d436ff12f1641ba4895db44d79ee, type: 2}
+  - {fileID: 11400000, guid: 663ab5074221e5240a94bcfaaf83e8fb, type: 2}
+  - {fileID: 11400000, guid: f39178a2287323f4bb067ca1303ad600, type: 2}
+  - {fileID: 11400000, guid: edc740b15aabd314180bc77974fc62ce, type: 2}
+  - {fileID: 11400000, guid: 5aa2cd0b568685e4f8b0d19eed6159fe, type: 2}
+  - {fileID: 11400000, guid: 7ca5aaf7814e6334099b1bcd1e2e877f, type: 2}
+  - {fileID: 11400000, guid: e5a0c37905b39c74c9885c5a7fb6e495, type: 2}
+  <BoardWidth>k__BackingField: 7.4
+  <BoardBottomY>k__BackingField: 0.75
+  <DangerHeight>k__BackingField: 9.3
+  <AimOffset>k__BackingField: 1.6
+  <DropInterval>k__BackingField: 0.45
+  <OverflowGrace>k__BackingField: 1
+  <MergeVelocityLimit>k__BackingField: 8

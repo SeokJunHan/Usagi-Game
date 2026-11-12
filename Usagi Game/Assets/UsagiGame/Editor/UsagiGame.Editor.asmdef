@@ -1,0 +1,7 @@
+{
+  "name": "UsagiGame.Editor",
+  "rootNamespace": "UsagiGame.Editor",
+  "references": ["UsagiGame.Runtime", "Unity.InputSystem", "Unity.TextMeshPro", "UnityEngine.UI", "Unity.2D.Sprite.Editor"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

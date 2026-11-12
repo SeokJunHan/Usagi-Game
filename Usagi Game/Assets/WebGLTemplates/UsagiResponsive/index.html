@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>{{{ PRODUCT_NAME }}}</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="frame">
+    <canvas id="unity-canvas" tabindex="-1"></canvas>
+    <div id="loading"><div id="title">USAGI</div><div id="track"><div id="bar"></div></div></div>
+  </main>
+  <script>
+    const canvas = document.querySelector('#unity-canvas');
+    const loading = document.querySelector('#loading');
+    const bar = document.querySelector('#bar');
+    const config = {
+      arguments: [], dataUrl: 'Build/{{{ DATA_FILENAME }}}',
+      frameworkUrl: 'Build/{{{ FRAMEWORK_FILENAME }}}',
+      codeUrl: 'Build/{{{ CODE_FILENAME }}}',
+      streamingAssetsUrl: 'StreamingAssets', companyName: {{{ JSON.stringify(COMPANY_NAME) }}},
+      productName: {{{ JSON.stringify(PRODUCT_NAME) }}}, productVersion: {{{ JSON.stringify(PRODUCT_VERSION) }}}
+    };
+    const script = document.createElement('script');
+    script.src = 'Build/{{{ LOADER_FILENAME }}}';
+    script.onload = () => createUnityInstance(canvas, config, p => bar.style.width = `${p * 100}%`)
+      .then(() => loading.remove()).catch(message => alert(message));
+    document.body.appendChild(script);
+    document.addEventListener('visibilitychange', () => { if (document.hidden) canvas.blur(); });
+  </script>
+</body>
+</html>

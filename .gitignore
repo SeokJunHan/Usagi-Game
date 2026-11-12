@@ -15,6 +15,15 @@
 /[Uu]ser[Ss]ettings/
 *.log
 
+# Nested Unity project generated folders
+/Usagi Game/[Ll]ibrary/
+/Usagi Game/[Tt]emp/
+/Usagi Game/[Oo]bj/
+/Usagi Game/[Bb]uild/
+/Usagi Game/[Bb]uilds/
+/Usagi Game/[Ll]ogs/
+/Usagi Game/[Uu]ser[Ss]ettings/
+
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
 *.blend1
 *.blend1.meta

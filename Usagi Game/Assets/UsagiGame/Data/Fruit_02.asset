@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 224c041118445e543a43e7cd442c2119, type: 3}
+  m_Name: Fruit_02
+  m_EditorClassIdentifier: 
+  <Stage>k__BackingField: 2
+  <DisplayName>k__BackingField: 02
+  <Sprite>k__BackingField: {fileID: 21300000, guid: c8b4be1938b42b34db37edab7998b9ef, type: 3}
+  <Radius>k__BackingField: 0.415
+  <Mass>k__BackingField: 0.172225
+  <MergeScore>k__BackingField: 3
+  <DropWeight>k__BackingField: 20
